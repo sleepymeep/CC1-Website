@@ -1,0 +1,112 @@
+<! DOCTYPE html>
+<head>
+	<title>===> CHAOS INTENSIFIES <===</title>
+	<link rel = "icon" href = "C:\Users\Jenniferynn Valiente\Desktop\VALIENTE_MIDTERMPROJ\icon.jpg">
+	<link rel = "stylesheet" type = "text/css" href = "styles.css">
+</head>
+
+<body>
+	<div class = "background">
+	<div class = "nav">
+		<a class = "a active" href = "file:///C:/Users/Jenniferynn%20Valiente/Desktop/VALIENTE_MIDTERMPROJ/homepage.html">HOME</a>
+		<a class = "b" href = "file:///C:/Users/Jenniferynn%20Valiente/Desktop/VALIENTE_MIDTERMPROJ/about.html">ABOUT ME</a>
+		<a class = "c" href = "file:///C:/Users/Jenniferynn%20Valiente/Desktop/VALIENTE_MIDTERMPROJ/gallary.html">GALLERY</a>
+		<a class = "d" href = "file:///C:/Users/Jenniferynn%20Valiente/Desktop/VALIENTE_MIDTERMPROJ/social.html">SOCIAL MEDIA</a>
+		<a class = "e" href = "file:///C:/Users/Jenniferynn%20Valiente/Desktop/VALIENTE_MIDTERMPROJ/others.html">OTHERS</a>
+	</div>
+	
+	<div class = "content">
+	
+		<div class = "card">
+			<div class = "column">
+			<h1><center>===> About Me <===</h1></center> <br>
+			 <center><h3><b>Name: Valiente Jenniferlynn Romae M.<br>
+				Age: 18<br>
+				Birthday: Feburary 28, 2000<br>
+				Height: 4,8<br>
+				Weight: 50<br>
+				Country: Philippines (Baguio)<br>
+				Personality: Introvert, Silent, Shy, Less Confident, Energetic<br>
+				Hobbies: Drawing and Writing<br>
+				Interest: Animation, Games, and Website Making <br>
+				Likes: sleeping, peaceful places, minding her own business <br>
+				Dislikes: Disturbing people, crowded places, massive pressure, and noisy people<br>
+				Dream: Writer</b></h3></center>
+			</div>
+		</div>
+	
+		<div class = "card">
+			<div class = "column">	
+			<center><h1>===> My Family <===</h1></center> <br>
+			<center><h3></b>Mother: Cricelia Mayor Valiente <br>
+			Father: Romeo Cel Valiente<br>
+			Older Sister: Valiente Jenniferlynn Romae M<br>
+			Younger Brother: Valiente Jerome Chris </b></h3></center>
+			</div>
+		</div>
+		
+	
+	</div>
+	</div>
+
+<script src = "https://code.jquery.com/jquery-1.11.3.js"> </script>
+<script type = "text/javascript">	
+		$(document).ready(function(){
+			$('a').click(function(){
+			//alert("i am click")
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+			});
+
+			$a = $('.a'),
+			$b = $('.b'),
+			$c = $('.c'),
+			$d = $('.d'),
+			$e = $('.e'),
+			$home = $('.home'),
+			$aboutme = $('.aboutme'),
+			$gallery = $('.gallery'),
+			$socialmedia = $('.socialmedia'),
+			$others = $('.others');	
+
+			$a.click(function(){
+				$home.fadeIn();
+				$aboutme.fadeOut();
+				$gallery.fadeOut();
+				$socialmedia.fadeOut();
+				$others.fadeOut();
+			});
+			$b.click(function(){
+				$aboutme.fadeIn();
+				$home.fadeOut();
+				$gallery.fadeOut();
+				$socialmedia.fadeOut();
+				$others.fadeOut();
+			});
+			$c.click(function(){
+				$gallery.fadeIn();
+				$home.fadeOut();
+				$aboutme.fadeOut();
+				$socialmedia.fadeOut();
+				$others.fadeOut();
+			});
+			$d.click(function(){
+				$socialmedia.fadeIn();
+				$home.fadeOut();
+				$aboutme.fadeOut();
+				$gallery.fadeOut();
+				$others.fadeOut();
+			});			 
+			$e.click(function(){
+				$others.fadeIn();
+				$aboutme.fadeOut();
+				$gallery.fadeOut();
+				$socialmedia.fadeOut();
+				$home.fadeOut();	
+			});	
+	});
+	});
+</script>
+</body>
+</html>

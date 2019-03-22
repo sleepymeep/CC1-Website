@@ -1,0 +1,150 @@
+<! DOCTYPE html>
+<head>
+	<title>===> CHAOS INTENSIFIES <===</title>
+	<link rel = "icon" href = "C:\Users\Jenniferynn Valiente\Desktop\VALIENTE_MIDTERMPROJ\icon.jpg">
+	<link rel = "stylesheet" type = "text/css" href = "styles.css">
+</head>
+
+<body>
+	<div class = "background">
+	<div class = "nav">
+		<a class = "a active" href = "file:///C:/Users/Jenniferynn%20Valiente/Desktop/VALIENTE_MIDTERMPROJ/homepage.html">HOME</a>
+		<a class = "b" href = "file:///C:/Users/Jenniferynn%20Valiente/Desktop/VALIENTE_MIDTERMPROJ/about.html">ABOUT ME</a>
+		<a class = "c" href = "file:///C:/Users/Jenniferynn%20Valiente/Desktop/VALIENTE_MIDTERMPROJ/gallary.html">GALLERY</a>
+		<a class = "d" href = "file:///C:/Users/Jenniferynn%20Valiente/Desktop/VALIENTE_MIDTERMPROJ/social.html">SOCIAL MEDIA</a>
+		<a class = "e" href = "file:///C:/Users/Jenniferynn%20Valiente/Desktop/VALIENTE_MIDTERMPROJ/others.html">OTHERS</a>
+	</div>
+	
+	<div class = "content">
+	
+		<div class = "card">
+		<div class = "column">
+		<center><h2>===> Comic & Art Gallary <===</h2></center><br>
+				<center><h3>In this page is where my comics or art works is held in this page, that includes blogs about the draft pages.</h3></center>
+				<center><h3>There is where many artworks and stuff had been worked out.</h3></center>
+			</div>
+		</div>
+		
+		<div class = "card">
+		<div class = "column">
+				<h2><center><b>===> Rules <===</b><center></h2><br>
+				<center><h3><b>YOUR NOT ALLOWED TO STEAL MY ARTWORK AND POST THAT INTO OTHER SOCIAL MEDIA</b></h3></center>
+				<center><h3>Permission to reupload my work is prohibited.</h3></center><br>
+			  </div>
+			</div>
+				  
+		<div class = "column">  
+		<div class="card">
+				<h2><center><b>===> Art Gallery <===</b></center></h2><br>
+				<center><img src = "Untitled740-1.png" width = "250" height = "200"/>
+				<img src = "Untitled747.png" width = "250" height = "250"/>
+				<img src = "Untitled554.png" width = "250" height = "150"/>
+				<img src = "Untitled802.png" width = "250" height = "250"/>
+				<img src = "Untitled799.png" width = "300" height = "200"/>
+				<img src = "Untitled770.png" width = "250" height = "250"/>
+				<img src = "Untitled630.png" width = "250" height = "250"/>
+				<img src = "Untitled573.png" width = "250" height = "250"/>
+				<img src = "Untitled761_20190102141857.png" width = "350" height = "500"/>
+				<img src = "Untitled781.png" width = "250" height = "250"/>
+				<img src = "Untitled497.png" width = "250" height = "250"/>
+				<img src = "Untitled803.png" width = "250" height = "250"/></center>
+			</div>
+		</div>
+
+		<div class = "card">
+		 <div class = "column">  	
+				<h2><center><b>===> Comic Gallery <===</b></center></h2><br>
+				<center><img src = "Untitled545.png" width = "350" height = "500"/>
+				<img src = "Untitled546.png" width = "350" height = "500"/>
+				<img src = "Untitled681.png" width = "350" height = "250"/>
+				<img src = "Untitled673.png" width = "350" height = "500"/>
+				<img src = "Untitled675.png" width = "350" height = "500"/>
+				<img src = "Untitled682.png" width = "350" height = "250"/>
+				<img src = "Untitled683.png" width = "350" height = "500"/>
+				<img src = "Untitled684.png" width = "350" height = "500"/>
+				<img src = "Untitled694.png" width = "350" height = "500"/>
+				<img src = "Untitled695.png" width = "350" height = "500"/></center>
+			</div>
+		  </div>
+		  
+		<div class = "card">
+		<div class = "column">
+				<h2><center><b>===> Random Pictures <===</b></center><h2><br>
+				<center><h4>This is where random pictures were posted in here, there is no link to the random page since this is a blog</h4></center><br>
+				<center><img src = "one.jpg" width = "250" height = "150"/>
+				<img src = "two.jpg" width = "250" height = "150"/>
+				<img src = "three.jpg" width = "250" height = "150"/>
+				<img src = "four.jpg" width = "250" height = "150"/>
+				<img src = "five.jpg" width = "250" height = "150"/>
+				<img src = "six.jpg" width = "250" height = "150"/>
+				<img src = "seven.jpg" width = "250" height = "150"/>
+				<img src = "eight.jpg" width = "250" height = "150"/>
+				<img src = "nine.jpg" width = "250" height = "150"/>
+				<img src = "ten.jpg" width = "250" height = "150"/></center>
+			  </div>
+		  </div>
+
+	</div>
+	</div>
+
+<script src = "https://code.jquery.com/jquery-1.11.3.js"> </script>
+<script type = "text/javascript">	
+		$(document).ready(function(){
+			$('a').click(function(){
+			//alert("i am click")
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+			});
+
+			$a = $('.a'),
+			$b = $('.b'),
+			$c = $('.c'),
+			$d = $('.d'),
+			$e = $('.e'),
+			$home = $('.home'),
+			$aboutme = $('.aboutme'),
+			$gallery = $('.gallery'),
+			$socialmedia = $('.socialmedia'),
+			$others = $('.others');	
+
+			$a.click(function(){
+				$home.fadeIn();
+				$aboutme.fadeOut();
+				$gallery.fadeOut();
+				$socialmedia.fadeOut();
+				$others.fadeOut();
+			});
+			$b.click(function(){
+				$aboutme.fadeIn();
+				$home.fadeOut();
+				$gallery.fadeOut();
+				$socialmedia.fadeOut();
+				$others.fadeOut();
+			});
+			$c.click(function(){
+				$gallery.fadeIn();
+				$home.fadeOut();
+				$aboutme.fadeOut();
+				$socialmedia.fadeOut();
+				$others.fadeOut();
+			});
+			$d.click(function(){
+				$socialmedia.fadeIn();
+				$home.fadeOut();
+				$aboutme.fadeOut();
+				$gallery.fadeOut();
+				$others.fadeOut();
+			});			 
+			$e.click(function(){
+				$others.fadeIn();
+				$aboutme.fadeOut();
+				$gallery.fadeOut();
+				$socialmedia.fadeOut();
+				$home.fadeOut();	
+			});	
+	});
+	});
+</script>
+</body>
+</html>
